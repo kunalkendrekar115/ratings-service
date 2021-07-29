@@ -1,0 +1,111 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "API's",
+    "version": "1.0.0",
+    "title": "Restaurants Ratings",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "schemes": ["http"],
+  "host": "localhost:5000",
+  "basePath": "/ratings",
+  "paths": {
+    "/ratings/{restaurantId}": {
+      "post": {
+        "summary": "Post Rating",
+        "description": "Returns list of ratings for perticular restaurant",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "restaurantId",
+            "in": "path",
+            "description": "restaurant Id is required ",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "access-token",
+            "in": "header",
+            "description": "token",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "requestBody": {
+          "description": "req body",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "ratings": {
+                    "type": "number"
+                  },
+                  "comment": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "items": "object"
+            }
+          },
+          "403": {
+            "description": "Invalid restaurant Id"
+          }
+        }
+      },
+      "get": {
+        "summary": "Get Ratings",
+        "description": "Returns list of ratings for perticular restaurant",
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "name": "restaurantId",
+            "in": "path",
+            "description": "restaurant Id is required ",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "description": "offset",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "limit",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "type": "object",
+              "items": "object"
+            }
+          },
+          "403": {
+            "description": "Invalid restaurant Id"
+          }
+        }
+      }
+    }
+  }
+}

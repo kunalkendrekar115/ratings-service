@@ -1,0 +1,21 @@
+{
+  "components": {
+    "schemas": {
+      "Rating": {
+        "type": "object",
+        "properties": {
+          "ratings": {
+            "type": "number",
+            "description": "ratings",
+            "example": "1"
+          },
+          "comment": {
+            "type": "string",
+            "description": "comments",
+            "example": "test"
+          }
+        }
+      }
+    }
+  }
+}
