@@ -4,7 +4,7 @@ const { CustomError } = require("restaurants-utils");
 const postRating = async (req, res, next) => {
   try {
     const { restaurantId } = req.params;
-    const { userId, name } = req;
+    const { userId, name } = req.body;
 
     if (!restaurantId) {
       throw new CustomError(403, "Restaurant id id is missing in url");
