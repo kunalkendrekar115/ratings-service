@@ -9,12 +9,14 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
+
   "schemes": ["http"],
   "host": "localhost:5000",
   "basePath": "/ratings",
   "paths": {
     "/ratings/{restaurantId}": {
       "post": {
+        "tags": ["ratings service"],
         "summary": "Post Rating",
         "description": "Returns list of ratings for perticular restaurant",
         "produces": ["application/json"],
@@ -67,6 +69,7 @@
         }
       },
       "get": {
+        "tags": ["ratings service"],
         "summary": "Get Ratings",
         "description": "Returns list of ratings for perticular restaurant",
         "produces": ["application/json"],
