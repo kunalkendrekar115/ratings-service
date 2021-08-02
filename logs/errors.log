@@ -6,3 +6,17 @@
  Jul-29-2021 19:02:06: Path: /ratings/60fea0d36423db7aa4440b23, JsonWebTokenError: invalid token
  Jul-29-2021 19:22:38: Path: /ratings/60fea0d36423db7aa4440b23, JsonWebTokenError: invalid token
  Jul-29-2021 19:23:38: Path: /ratings/60fea0d36423db7aa4440b23, TypeError: Cannot create property 'ignore_whitespace' on string 'rating is required'
+ Aug-02-2021 14:26:56: Path: /ratings/60fea0d36423db7aa4440b23, JsonWebTokenError: jwt malformed
+ Aug-02-2021 17:18:13: Path: /ratings/60fea0d36423db7aa4440b, Error: Request failed with status code 500
+ Aug-02-2021 17:19:39: Path: /ratings/60fea0d36423db7aa4440b29, Error: Request failed with status code 403
+ Aug-02-2021 17:22:32: Path: /ratings/60fea0d36423db7aa4440b29, Error: Request failed with status code 404
+ Aug-02-2021 17:32:02: Path: /ratings/60fea0d36423db7aa4440b89, Error: Request failed with status code 404
+ Aug-02-2021 19:54:17: Path: /ratings/60fea0d36423db7aa4440b23, ReferenceError: id is not defined
+ Aug-02-2021 19:54:36: Path: /ratings/60fea0d36423db7aa4440b23, TokenExpiredError: jwt expired
+ Aug-02-2021 19:55:21: conn.createChannel is not a function
+ Aug-02-2021 19:58:55: conn is not defined
+ Aug-02-2021 20:42:26: Path: /ratings/60fea0d36423db7aa4440b23, Error: connect ECONNREFUSED 127.0.0.1:4000
+ Aug-02-2021 20:44:50: Path: /ratings/60fea0d36423db7aa4440b56, Error: Request failed with status code 404
+ Aug-02-2021 20:45:44: Path: /ratings/60fea0d36423db7aa4440b56, Error: Request failed with status code 404
+ Aug-02-2021 20:51:21: Cannot read property 'length' of null
+ Aug-02-2021 21:06:15: count is not defined
