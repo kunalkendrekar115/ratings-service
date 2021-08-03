@@ -11,7 +11,7 @@ const checkValidRestaurantMw = async (req, res, next) => {
       throw new CustomError(403, "Restaurant id id is missing in url");
     }
 
-    const restaurant = await axios.get(`http://localhost:4000/restaurants/${restaurantId}`);
+    const restaurant = await axios.get(`${process.env.RESTAURANTS_SERVICE}${restaurantId}`);
     if (restaurant) next();
   } catch ({ response }) {
     next(new CustomError(response.status, response.data));

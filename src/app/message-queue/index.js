@@ -6,18 +6,15 @@ const amqp = require("amqplib/callback_api");
 
 const connect = () => {
   return new Promise((resolve, reject) => {
-    amqp.connect(
-      "amqps://hutlyloi:0M39C00k8_538qtCWNcPhCYe-uZtioOn@beaver.rmq.cloudamqp.com/hutlyloi",
-      (err, conn) => {
-        if (err != null) {
-          logger.error(err);
-          reject(err);
-          return;
-        }
-        logger.info("Connected Message Queue");
-        resolve(conn);
+    amqp.connect(process.env.RABIT_MQ, (err, conn) => {
+      if (err != null) {
+        logger.error(err);
+        reject(err);
+        return;
       }
-    );
+      logger.info("Connected Message Queue");
+      resolve(conn);
+    });
   });
 };
 

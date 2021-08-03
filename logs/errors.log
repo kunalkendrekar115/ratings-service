@@ -20,3 +20,5 @@
  Aug-02-2021 20:45:44: Path: /ratings/60fea0d36423db7aa4440b56, Error: Request failed with status code 404
  Aug-02-2021 20:51:21: Cannot read property 'length' of null
  Aug-02-2021 21:06:15: count is not defined
+ Aug-03-2021 14:16:47: Path: /ratings/60ffd0a6f2c054205ebe86c8, JsonWebTokenError: invalid token
+ Aug-03-2021 17:42:27: Path: /ratings/60ffd0a6f2c054205ebe86c8, TokenExpiredError: jwt expired
