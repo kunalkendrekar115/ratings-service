@@ -22,3 +22,4 @@
  Aug-02-2021 21:06:15: count is not defined
  Aug-03-2021 14:16:47: Path: /ratings/60ffd0a6f2c054205ebe86c8, JsonWebTokenError: invalid token
  Aug-03-2021 17:42:27: Path: /ratings/60ffd0a6f2c054205ebe86c8, TokenExpiredError: jwt expired
+ Aug-11-2021 14:31:42: Path: /ratings/60ffd0a6f2c054205ebe86c8, JsonWebTokenError: jwt malformed

@@ -5,13 +5,10 @@ const { publishUpdatedRatings } = require("./helpers");
 const postRating = async (req, res, next) => {
   try {
     const { restaurantId } = req.params;
-    const { userId, name } = req.body;
 
     const record = new RatingModal({
       ...req.body,
       restaurantId,
-      userId,
-      name,
       dateTime: new Date().toString()
     });
 
